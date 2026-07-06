@@ -1,141 +1,152 @@
-# 이재철 · JAECHEOL LEE
+# Project Repository
 
-> 인프라 & 보안 엔지니어 · 홈랩 GitOps 운영자
-> Infrastructure & Security Engineer · homelab GitOps operator
-
-[![GitHub](https://img.shields.io/badge/GitHub-jclee941-181717?style=flat-square&logo=github)](https://github.com/jclee941)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
-[![Profile README](https://img.shields.io/badge/type-profile--README-blueviolet?style=flat-square)](README.md)
+[![License: see LICENSE](https://img.shields.io/badge/license-see_LICENSE-blue.svg)](LICENSE)
+[![Stage](https://img.shields.io/badge/stage-initial_scaffold-orange.svg)](#status)
+[![Production-ready](https://img.shields.io/badge/production--ready-no-lightgrey.svg)](#status)
 
 ## 한국어 요약
 
-Proxmox 홈랩을 Terraform으로 IaC화하고 FortiGate 로그를 Splunk로 수집·분석하는 9년차 인프라·보안 엔지니어입니다. 16개 레포지토리를 단일 `.github` 레포에서 GitOps로 관리하며, Cloudflare Workers 기반 PWA와 Formula Student Driverless 자율주행 프로젝트도 함께 진행합니다.
+이 저장소는 신규 프로젝트를 위한 문서 골격만 포함합니다. 루트에는
+`CONTRIBUTING.md`, `LICENSE`, 본 `README.md` 세 개 파일이 있으며,
+애플리케이션 소스 코드, 빌드 구성, 테스트 스위트는 아직 존재하지
+않습니다. 본 README는 소스가 추가될 때 채울 수 있는 템플릿으로
+운영되며, 현재 저장소 상태와 다음 행동을 명확히 안내합니다.
 
-## Quick-glance status
+## English Summary
 
-| 항목 | 값 |
-|------|-----|
-| 종류 | GitHub 프로필 레포지토리 (단일 README) |
-| 코드 실행 | 없음 — 정적 Markdown |
-| 진입점 | `README.md` |
-| 외부 위젯 | shields.io, github-readme-stats.vercel.app |
-| 유지보수 | 활성 (수동 동기화) |
-| 라이선스 | 저장소 `LICENSE` 참조 |
+This repository ships only the documentation scaffold for an
+upcoming project. The root contains `CONTRIBUTING.md`, `LICENSE`,
+and this `README.md`. No application source, build configuration,
+or test suite is present yet, and this README is meant to be
+populated when source code lands.
 
-## 운영 흐름
+## Status
 
-1. `README.md` 편집 → 커밋 → `main` 푸시
-2. GitHub가 프로필 페이지에 자동 렌더링
-3. 통계 카드는 `github-readme-stats.vercel.app`에서 주기적 갱신
-4. 새 프로젝트는 `주요 프로젝트` 표에 행 추가
-5. 다음 운영 액션: 변경 후 푸시하여 프로필 반영 확인
-
-## 목차 / Contents
-
-- [패키지 구성](#패키지-구성--package-contents)
-- [상태](#상태--status)
-- [첫 번째로 읽을 파일](#첫-번째로-읽을-파일--first-files-to-read)
-- [진입점](#진입점--entry-points)
-- [빠른 시작](#빠른-시작--quickstart)
-- [기술 스택](#기술-스택--tech-stack)
-- [주요 프로젝트](#주요-프로젝트--featured-projects)
-- [활동](#활동--activity)
-- [기여](#기여--contributing)
-- [유지보수자](#유지보수자--maintainer)
-- [라이선스](#라이선스--license)
-
-## 패키지 구성 / Package contents
-
-| 경로 | 설명 |
+| 항목 | 상태 |
 |------|------|
-| [`README.md`](README.md) | 프로필 페이지를 렌더링하는 유일한 진입점 |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) | 이슈·PR 작성 가이드 |
-| [`LICENSE`](LICENSE) | 라이선스 전문 |
+| Repository stage | 초기 골격 (Initial scaffold) |
+| 프로덕션 준비 | 아니오 |
+| 소스 코드 | 미존재 |
+| 빌드 / 패키징 | 미구성 |
+| 테스트 | 미구성 |
+| CI / 배포 | 미구성 |
+| 운영 문서 | `CONTRIBUTING.md`, `README.md` |
+| 라이선스 | `LICENSE` |
 
-## 상태 / Status
+## 운영 흐름 요약
 
-| 항목 | 값 |
-|------|-----|
-| 프로덕션 준비 | 정적 페이지 — 즉시 사용 가능 |
-| 자동화 | 없음 (GitHub Actions 미사용) |
-| 의존성 | shields.io 배지, github-readme-stats 위젯 |
-| 폐기 여부 | 활성 유지 |
-| 보조 문서 | `CONTRIBUTING.md` |
+| 운영 항목 | 현재 상태 |
+|-----------|----------|
+| 실행 중 프로세스 | 없음 (소스 미존재) |
+| 책임자 / 팀 | `CONTRIBUTING.md` 채택 시 본 절에 기록 |
+| 다음 행동 | 저장소 클론 → `LICENSE`, `CONTRIBUTING.md` 검토 → 첫 이슈/PR 제안 |
 
-## 첫 번째로 읽을 파일 / First files to read
+## 목차
 
-| 순서 | 파일 | 목적 |
-|------|------|------|
-| 1 | [`README.md`](README.md) | 프로필 카드, 기술 스택, 프로젝트 링크 |
-| 2 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | 외부 기여 절차 |
-| 3 | [`LICENSE`](LICENSE) | 사용·재배포 조건 |
+- [개요 / Overview](#개요--overview)
+- [Package Contents](#package-contents)
+- [First Files to Read](#first-files-to-read)
+- [API or Entry Points](#api-or-entry-points)
+- [Quickstart / Usage](#quickstart--usage)
+- [Local Development](#local-development)
+- [Maintainers / Points of Contact](#maintainers--points-of-contact)
+- [Further Documentation](#further-documentation)
+- [License](#license)
 
-## 진입점 / Entry points
+## 개요 / Overview
 
-| 진입점 | 용도 |
-|--------|------|
-| [`README.md`](README.md) | GitHub 프로필 페이지의 유일한 렌더링 진입점 |
-| shields.io 배지 | 기술 스택 시각화 |
-| github-readme-stats 카드 | 활동 통계 시각화 |
+### 무엇인가 / What it is
 
-## 빠른 시작 / Quickstart
+이 저장소는 향후 추가될 산출물을 위한 컨테이너입니다. 현재 루트에는
+다음 세 개 파일만 존재합니다.
 
-이 레포는 코드가 없는 프로필 레포지토리입니다. 별도 설치 없이 GitHub 프로필 페이지에서 바로 렌더링됩니다.
+- `CONTRIBUTING.md` – 기여 절차와 리뷰 정책.
+- `LICENSE` – 라이선스 전문.
+- `README.md` – 본 파일, 저장소 소개 및 온보딩 안내.
+
+### 누구를 위한 것인가 / Who it is for
+
+- 저장소의 법적 사용 범위를 확인해야 하는 모든 방문자.
+- 첫 이슈나 PR을 제출하려는 잠재 기여자.
+- 향후 소스 코드 추가 시 본 README를 갱신할 책임자.
+
+### 현 시점에서 할 수 있는 것
+
+- 라이선스 조건 검토.
+- 기여 절차 숙지.
+- 저장소 소개용 README 참조.
+- 이슈 또는 PR을 통한 개선 제안.
+
+## Package Contents
+
+루트 디렉터리의 실제 레이아웃입니다. 본 README 외에는 추가 디렉터리나
+소스가 존재하지 않습니다.
+
+```
+/
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
+```
+
+## First Files to Read
+
+| 순서 | 파일 | 확인 목적 |
+|------|------|----------|
+| 1 | `LICENSE` | 사용·배포·수정 허용 범위 |
+| 2 | `CONTRIBUTING.md` | 기여 워크플로와 리뷰 정책 |
+| 3 | `README.md` | 저장소 상태 및 향후 갱신 지점 (현재 파일) |
+
+## API or Entry Points
+
+실행 가능한 진입점, CLI 서브커맨드, HTTP 엔드포인트는 현재 등록되어
+있지 않습니다. 소스가 추가되면 본 절에 다음 항목이 채워집니다.
+
+- 빌드 / 설치 명령.
+- 실행 진입점.
+- 외부 인터페이스 (CLI 플래그, 환경 변수, RPC 등).
+
+## Quickstart / Usage
+
+소스 코드가 없어 로컬에서 실행하거나 빌드할 수 없습니다. 저장소를
+클론한 뒤 운영 문서를 먼저 읽는 것이 권장 진입 절차입니다.
 
 ```bash
-# 로컬에서 확인하려면 클론
-git clone https://github.com/jclee941/jclee-bot
-cd jclee941
+git clone <repository-url>
+cd <repository-name>
+ls -la
 ```
 
-프로필을 수정하려면 [`README.md`](README.md)를 편집해 커밋·푸시합니다. 변경 사항은 GitHub 프로필 페이지에 자동으로 반영됩니다. 새 프로젝트는 `주요 프로젝트` 표에 행을 추가하세요.
+온보딩 후 첫 변경을 제안하려면 `CONTRIBUTING.md`의 절차에 따라
+이슈나 PR을 여세요.
 
-## 기술 스택 / Tech stack
+## Local Development
 
-| 분야 | 도구 |
-|------|------|
-| 언어 | Python, Go, TypeScript |
-| 인프라 | Terraform, Proxmox, Docker |
-| 보안 | Splunk, FortiGate |
-| 웹 | Cloudflare Workers, Hono, D1 |
-| 자동화 | PR-Agent (fork), n8n, FastAPI |
-| ML / 자율주행 | Formula Student Driverless |
+소스가 없는 상태이므로 다음과 같은 작업만 가능합니다.
 
-## 주요 프로젝트 / Featured projects
+| 활동 | 가능 여부 |
+|------|----------|
+| 저장소 클론 | 가능 |
+| 마크다운 문서 편집 | 가능 |
+| 이슈 / PR 생성 | 가능 (정책은 `CONTRIBUTING.md` 참고) |
+| 로컬 빌드 | 불가 (빌드 시스템 미존재) |
+| 테스트 실행 | 불가 (테스트 스위트 미존재) |
 
-| 레포 | 설명 |
-|------|------|
-| [terraform](https://github.com/jclee941/terraform) | Proxmox 홈랩 IaC 모노레포 |
-| [splunk](https://github.com/jclee941/splunk) | FortiGate SIEM 보안 모니터링 앱 |
-| [safetywallet](https://github.com/jclee941/safetywallet) | 현장 작업자 안전 PWA (Cloudflare Workers) |
-| [.github](https://github.com/jclee941/jclee-bot) | 16개 레포 GitOps 자동화 |
+코드 자산이 추가되면 본 절에 빌드 명령, 린트 설정, 실행 스크립트가
+기록됩니다.
 
-## 활동 / Activity
+## Maintainers / Points of Contact
 
-| 카드 | 소스 | 비고 |
-|------|------|------|
-| GitHub Stats | github-readme-stats.vercel.app | 서드파티, 일시 지연 가능 |
-| Top Languages | github-readme-stats.vercel.app | 서드파티, 일시 지연 가능 |
+별도 maintainer 그룹은 아직 지정되지 않았습니다. 책임자 및 연락
+방법은 `CONTRIBUTING.md`가 채택되는 대로 본 절에 기록됩니다.
 
-```html
-<!-- 아래 위젯은 서드파티 서비스를 통해 렌더링됩니다. -->
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=jclee941&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jclee941&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-```
+## Further Documentation
 
-## 기여 / Contributing
+추가 운영 문서는 `docs/` 디렉터리가 도입될 때 작성됩니다. 지금은
+`CONTRIBUTING.md`가 유일한 운영 문서이며, 본 README는 저장소
+소개와 온보딩 안내 용도로만 제공됩니다.
 
-이 레포는 개인 프로필을 위한 저장소로, 외부 코드 기여를 받지 않습니다. 오타 수정이나 깨진 링크는 이슈로 제보해 주세요. 절차는 [`CONTRIBUTING.md`](CONTRIBUTING.md)를 참조하세요.
+## License
 
-## 유지보수자 / Maintainer
-
-| 역할 | 연락처 |
-|------|--------|
-| Owner | 이재철 (JAECHEOL LEE) |
-| GitHub | <https://github.com/jclee941> |
-
-도움이 필요하면 GitHub 이슈를 개설하세요.
-
-## 라이선스 / License
-
-본 레포의 사용·재배포 조건은 [`LICENSE`](LICENSE) 파일을 참조하세요.
+`LICENSE` 파일의 조건에 따라 배포됩니다. 외부 배포, 2차 저작물
+포함, 상업적 이용 전 반드시 원본 라이선스 전문을 확인하세요.
